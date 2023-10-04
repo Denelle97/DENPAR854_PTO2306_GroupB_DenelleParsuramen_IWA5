@@ -11,9 +11,9 @@ let totalCost = 0;
 // Calculate item costs
 const shoes = 300 * 1;
 const toys = 100 * 5;
-const shirts = 150 * 0; // Assume 'NONE_SELECTED' means 0
+const shirts = 150 * 0; // 'NONE_SELECTED' means 0
 const batteries = 35 * 2;
-const pens = 5 * 0; // Assume 'NONE_SELECTED' means 0
+const pens = 5 * 0; //  'NONE_SELECTED' means 0
 
 totalCost = shoes + toys + shirts + batteries + pens;
 
@@ -22,7 +22,7 @@ if (country === 'RSA' || country === 'NAM') {
     shipping = 0;
 } 
   else {
-    shipping = location === 'RSA' ? 400 : 600;
+    shipping = country === 'RSA' ? 400 : 600;
   }
 } 
 
